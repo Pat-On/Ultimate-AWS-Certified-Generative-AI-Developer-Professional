@@ -1,0 +1,7 @@
+# 19. Managing Chunking Strategies with Bedrock
+
+- **Duration:** 7min
+- **Status:** Not completed
+
+## Notes
+
