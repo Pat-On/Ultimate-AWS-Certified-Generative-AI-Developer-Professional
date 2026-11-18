@@ -1,7 +1,1 @@
 # 183. Amazon EventBridge
-
-- **Duration:** 7min
-- **Status:** Not completed
-
-## Notes
-
