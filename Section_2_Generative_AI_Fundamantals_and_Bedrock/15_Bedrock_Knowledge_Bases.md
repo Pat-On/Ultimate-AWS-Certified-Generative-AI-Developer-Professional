@@ -17,7 +17,7 @@ In Bedrock, RAG is wrapped up as **knowledge bases**. The idea is the same as RA
   - Other options: **MemoryDB** (now with vector capabilities), **Aurora**, **MongoDB Atlas**, **Pinecone** and **Redis Enterprise Cloud**.
 - **Chunking:** you control how the data is split, since a big document can't go into the store as a single entry. You want to retrieve only the pieces relevant to the user's question.
   - You control the **chunk size** and the **overlap between chunks**.
-  - The lecture recalls a default of about 300 characters, but the slide describes chunk size in tokens. Check what the console shows in the hands-on (lecture 16).
+  - The default is about 300 **tokens** per chunk (lecture 16 confirms this in the console). The lecture said "characters" from memory, but the slide describes chunk size in tokens.
   - Arbitrary fixed-size slicing is what people usually do, but a coherent thought per entry is better. Splitting by sentence or paragraph, using structured data, or using a graph database for a knowledge graph can all do better. Chunking strategies come up again in lectures 18 and 19.
 
 ## How the pipeline fits together
