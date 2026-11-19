@@ -1,21 +1,28 @@
 # 8. A quick note on model access
 
-Using Anthropic Models
+Practical notes before the hands-on activities in the following lectures.
 
-Access to all Bedrock foundation models is now supposed to be enabled by default, but apparently an exception (for now) is models from Anthropic, like the one we show in the following activity. If you are using an Anthropic model for the first time (like Claude Haiku or Opus) you need to first submit a use case and request access to it.
+## Using Anthropic models
 
-You will be prompted to submit a use case upon selecting a Claude model. A use case of "educational use with an online course" sounds reasonable to me.
+- Access to all Bedrock foundation models is now supposed to be enabled by default. **Anthropic models are, for now, an exception.**
+- The first time you use one (e.g. Claude Haiku or Opus) you must **submit a use case and request access**. You are prompted for it when you select a Claude model.
+  - A use case such as "educational use with an online course" is reasonable.
+- Alternatively, choose a foundation model that is not from Anthropic.
 
-Or, you could simply choose a foundation model that is not from Anthropic.
+## Models change frequently
 
-Models Change Frequently
+- The models offered through Bedrock change constantly as new ones are added and older ones removed.
+- Don't expect the models you see in Bedrock to match the screenshots or videos in this course.
 
-The specific models offered via Bedrock changes extremely frequently as new ones are added and older ones are removed. Don't expect the models you see in Bedrock today to match the ones shown in screenshots or videos in this course. They come and go all the time.
+## No free tier
 
-No Free Tier
+- Bedrock, and many of the newer services in this course, are **not covered by the AWS free tier**.
+- To follow along hands-on you need a **paid account**, and it will cost a few dollars.
+- Set up a **billing alarm** to be safe (lecture 5). You can also just watch the videos.
 
-Bedrock and many of the newer services covered in this course are not available under the AWS "free tier." You will need a paid account in order to follow along hands-on, and doing so will involve a few dollars in cost. Be sure you have a billing alarm set up to be safe. Of course, you can just watch the videos instead of following along for free.
+## Quota limits
 
-Quota Limits
-
-Some students are experiencing on-demand quotas for Bedrock being set to zero in their accounts. If you see an error like "Throttling Exception Too many tokens per day, please wait before trying again", you may need to contact AWS support and ask for your quota limit to be increased to a non-zero value. Remember to set up billing alarms and monitor your usage to keep costs under control.
+- Some students find their **on-demand quotas for Bedrock set to zero**.
+- A sign of this is an error like "Throttling Exception: Too many tokens per day, please wait before trying again".
+- The fix is to **contact AWS support** and ask for the quota limit to be raised to a non-zero value.
+- Keep billing alarms set and monitor your usage to keep costs under control.
