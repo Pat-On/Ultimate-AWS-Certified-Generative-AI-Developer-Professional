@@ -2,6 +2,8 @@
 
 **AWS Agent Squad** is another open-source agentic SDK that originated at Amazon. It is a **router** for **orchestration and intelligent intent classification**.
 
+Repository: https://github.com/awslabs/agent-squad
+
 ## Status
 
 - The instructor is unsure of its future, as it had not been updated for about five months at recording time.
