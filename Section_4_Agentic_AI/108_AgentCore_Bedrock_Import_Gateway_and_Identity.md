@@ -26,6 +26,8 @@ Three more **AgentCore** capabilities: importing existing Bedrock agents, the **
 - **OAuth 2.0 support**, with built-in support for **Google, GitHub, Slack, Salesforce and Atlassian**.
 - It is a deep topic that the exam is not expected to need in depth.
 
+https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html
+
 ## Exam takeaways
 
 1. **`agentcore import-agent`** converts a Bedrock agent into **Strands** (or LangChain/LangGraph) code that you can extend and deploy.
