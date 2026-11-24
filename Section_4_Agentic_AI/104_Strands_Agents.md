@@ -37,6 +37,8 @@
 - An `Agent` object is created with a **list of tools**: the custom letter counter plus built-ins such as the **calculator**, **current time** and **Python execution** tools.
 - Calling the agent with a message makes it loop through the tools it needs (time, calculator, letter counter, generated Python code) before returning the final answer.
 
+Quickstart (source of the example): https://strandsagents.com/0.1.x/documentation/docs/user-guide/quickstart/
+
 ## Exam takeaways
 
 1. Strands is **open source, Python, with tight AWS integration** (Bedrock, Lambda, Step Functions) but **not AWS-only**.
