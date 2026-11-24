@@ -9,6 +9,7 @@ Logging all requests to a bucket into another bucket for audit purposes.
 - The logs can be analyzed with data analysis tools such as **Amazon Athena**.
 - The **target logging bucket must be in the same AWS region**.
 - The log format is documented in the AWS S3 documentation.
+- Log format: https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html
 
 ## Warning: logging loop
 
