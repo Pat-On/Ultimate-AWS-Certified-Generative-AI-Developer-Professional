@@ -6,6 +6,7 @@ How **LLM agents** (Agentic AI) work in **Amazon Bedrock**: an agent gives **too
 
 - An agent **extends a foundation model** with the ability to reach outside data and services and fold the results into its response.
 - Conceptually (as Nvidia describes it) an agent has a **core** built on a foundation model, a **planning module**, **tools** and **memory**.
+  - Source: https://developer.nvidia.com/blog/introduction-to-llm-agents
 - **Planning module**: guidance given to the LLM on how to break a request into sub-questions and approach it step by step.
 - **Memory**: in practice the **chat history** plus **external data stores**.
 - The model learns when and how to use each tool, and how to pass parameters, only from **plain-English descriptions**. This differs from traditional development, with its tightly defined APIs and hard-coded rules for when to call them.
