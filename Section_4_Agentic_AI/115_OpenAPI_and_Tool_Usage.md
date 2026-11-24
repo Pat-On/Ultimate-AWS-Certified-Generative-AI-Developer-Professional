@@ -13,7 +13,39 @@
 
 ## Example
 
-The slide shows a calculator tool (`openapi: 3.1.0`, title "Calculator Tool"). It has an `/add` path with a `GET` operation (`operationId: add`) that takes two required numeric query parameters `a` and `b`, and returns a `200` JSON response with a numeric `result`.
+A calculator tool, from the slide. It has an `/add` path with a `GET` operation that takes two required numeric query parameters `a` and `b`, and returns a `200` JSON response with a numeric `result`.
+
+```yaml
+openapi: 3.1.0
+info:
+  title: Calculator Tool
+  version: 1.0.0
+
+paths:
+  /add:
+    get:
+      operationId: add
+      summary: Add two numbers
+      parameters:
+        - name: a
+          in: query
+          required: true
+          schema: { type: number }
+        - name: b
+          in: query
+          required: true
+          schema: { type: number }
+      responses:
+        "200":
+          description: Sum
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: number
+```
 
 ## Use with Bedrock action groups
 
