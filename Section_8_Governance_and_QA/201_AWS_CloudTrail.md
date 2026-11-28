@@ -7,7 +7,7 @@
 The history of **events and API calls** made through the **console, SDK, CLI**, by **IAM users and roles**, and by **AWS services**. It answers **who did what, and when**, for example who terminated an EC2 instance.
 
 - Send logs to **CloudWatch Logs** or **S3**.
-- A **trail** applies to **all regions** or a **single region**, for example collecting every region into one S3 bucket.
+- A **trail** applies to **all regions** (the **default**) or a **single region**, for example collecting every region into one S3 bucket.
 
 ## Event types
 
