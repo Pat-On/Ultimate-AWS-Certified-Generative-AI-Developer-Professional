@@ -29,6 +29,23 @@ The result is an **S3 data lake** that **Athena**, **Redshift / Redshift Spectru
 - Use **policy tags** (called **LF-Tags** in AWS) on databases, tables or columns, or grant explicitly.
 - Choose the actions (select, insert, delete and so on) per **table** or **column**.
 
+## Data filters
+
+Applied when granting **`SELECT`** on a table; created in the console or with the **`CreateDataCellsFilter`** API.
+
+| Security level | Filter |
+|---|---|
+| **Column** | All rows, chosen columns |
+| **Row** | All columns, plus a row filter |
+| **Cell** | Chosen columns and chosen rows |
+
+## Governed tables
+
+- A type of S3 table with **ACID transactions** across several tables; the choice **cannot be changed** afterwards.
+- Works with **streaming data** (Kinesis), can be queried with **Athena**, and **compacts storage automatically**.
+- Row and cell-level security applies to governed and ordinary S3 tables. These features **cost extra**, based on usage.
+- AWS has since announced the **end of support** for governed tables; check the current documentation. The course material still lists them.
+
 ## Troubleshooting
 
 | Problem | Check |
@@ -41,6 +58,6 @@ The result is an **S3 data lake** that **Athena**, **Redshift / Redshift Spectru
 ## Exam takeaways
 
 1. **Secure data lake** on S3 → **Lake Formation**.
-2. **Column-level** (fine-grained) permissions → **Lake Formation**.
-3. Free itself; underlying services are charged.
+2. **Column, row or cell-level** (fine-grained) permissions → **Lake Formation** (data filters).
+3. Lake Formation itself is free; underlying services (and the extra table features) are charged.
 4. Cross-account problems → **RAM**, IAM and data lake administrator.
