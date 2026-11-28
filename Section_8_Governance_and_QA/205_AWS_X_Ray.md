@@ -38,7 +38,7 @@ AWS has announced that the X-Ray SDKs and daemon are moving to maintenance mode 
 | Where | Check |
 |---|---|
 | Works locally, **not on EC2** | The **daemon** is running on the instance, and the **IAM role** has permission |
-| **Lambda** | **Execution role** with the right policy, X-Ray SDK imported in the code, **active tracing** enabled |
+| **Lambda** | **Execution role** with the right policy (**`AWSX-RayWriteOnlyAccess`**), X-Ray SDK imported in the code, **active tracing** enabled |
 
 ## Exam takeaways
 
